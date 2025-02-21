@@ -44,7 +44,7 @@ window.translations = {
         tagline: "Improved Quality",
         banner: "<strong>Zet huur om in korting!</strong> Ontvang 50% terug bij een omzet van Euro 3.300,00",
         concept: "Uniek Concept in Nederland",
-        description: "Word lid en supporter van Flex Werkplekken, en ontvang de kickback vergoeding.",
+        description: "Word lid van Flex Werkplekken, en ontvang de kickback vergoeding.",
         costPrice: "Kostprijs per maand: <strong>€2.200</strong>",
         aboveThreshold: "Alles boven dit bedrag wordt pro-rata verdeeld onder de leden.",
         revenue: "Omzet:",
