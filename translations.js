@@ -8,7 +8,7 @@ window.translations = {
     // English translations
     en: {
         tagline: "Improved Quality",
-        banner: "<strong>Turn rentals into rewards!</strong> Keep 100% of the rent, with €2,200 fueling your kickbacks.",
+        banner: "<strong>Turn rentals into rewards!</strong> Get 50% of the rent, with €3,300 fueling your kickbacks.",
         concept: "Unique Concept in the Netherlands",
         description: "Become a member and supporter of Flex Workspaces, and receive the kickback fee.",
         costPrice: "Cost price per month: <strong>€2,200</strong>",
@@ -26,8 +26,7 @@ window.translations = {
         maxPrice: "Max price: €230",
         yourPrice: "Your price: €115",
         flexOfficeTitle: "Flex Office",
-        privateOffice: "Private office for 1-8 people",
-        presentationScreen: "Presentation screen",
+        privateOffice: "Private office for 1-4 people",
         officeMaxPrice: "Max price: €470",
         officeYourPrice: "Your price: €235",
         meetingRooms: "Meeting Rooms",
@@ -37,13 +36,13 @@ window.translations = {
         largeRoom: "Large Meeting Room",
         largePeople: "For 4-8 people",
         largePrice: "€19.50 per hour",
-        contact: "Contact: Ge Limmen • +31 6 22380123"
+        contact: "Email: schieland@schieland18.nl • Website: www.schieland18.nl • Contact: Max Nijman 0634 261817"
     },
     
     // Dutch translations
     nl: {
-        tagline: "Verbeterde Kwaliteit",
-        banner: "<strong>Zet verhuur om in beloningen!</strong> Behoud 100% van de huur, met €2.200 als basis voor uw kickbacks.",
+        tagline: "Improved Quality",
+        banner: "<strong>Zet huur om in korting!</strong> Ontvang 50% terug bij een omzet van Euro 3.300,00",
         concept: "Uniek Concept in Nederland",
         description: "Word lid en supporter van Flex Werkplekken, en ontvang de kickback vergoeding.",
         costPrice: "Kostprijs per maand: <strong>€2.200</strong>",
@@ -61,8 +60,7 @@ window.translations = {
         maxPrice: "Max prijs: €230",
         yourPrice: "Uw prijs: €115",
         flexOfficeTitle: "Flex Kantoor",
-        privateOffice: "Privé kantoor voor 1-8 personen",
-        presentationScreen: "Presentatiescherm",
+        privateOffice: "Privé kantoor voor 1-4 personen",
         officeMaxPrice: "Max prijs: €470",
         officeYourPrice: "Uw prijs: €235",
         meetingRooms: "Vergaderruimtes",
@@ -72,7 +70,7 @@ window.translations = {
         largeRoom: "Grote Vergaderruimte",
         largePeople: "Voor 4-8 personen",
         largePrice: "€19,50 per uur",
-        contact: "Contact: Ge Limmen • +31 6 22380123"
+        contact: "Email: schieland@schieland18.nl • Website: www.schieland18.nl • Contact: Max Nijman 0634 261817"
     }
 };
 
@@ -97,7 +95,7 @@ function updateLanguage(lang) {
     // Update calculation rows
     document.querySelectorAll('.calc-row span:first-child')[0].innerHTML = t.revenue;
     document.querySelectorAll('.calc-row span:first-child')[1].innerHTML = t.threshold;
-    document.querySelectorAll('.calc-row span:first-child')[2].innerHTML = t.kickback;
+    document.querySelector('.kickback-label').innerHTML = t.kickback;
     
     // Update flex workspaces card
     document.querySelectorAll('.card-header h3')[0].innerHTML = t.flexWorkTitle;
@@ -118,7 +116,6 @@ function updateLanguage(lang) {
     document.querySelectorAll('.feature-list')[1].querySelectorAll('li')[3].innerHTML = `<i class="fas fa-euro-sign"></i> ${t.kickbackFee}`;
     document.querySelectorAll('.feature-list')[1].querySelectorAll('li')[4].innerHTML = `<i class="fas fa-coffee"></i> ${t.coffee}`;
     document.querySelectorAll('.feature-list')[1].querySelectorAll('li')[5].innerHTML = `<i class="fas fa-user-check"></i> ${t.benefits}`;
-    document.querySelectorAll('.feature-list')[1].querySelectorAll('li')[6].innerHTML = `<i class="fas fa-tv"></i> ${t.presentationScreen}`;
     document.querySelectorAll('.original-price')[1].innerHTML = t.officeMaxPrice;
     document.querySelectorAll('.final-price')[1].innerHTML = t.officeYourPrice;
     

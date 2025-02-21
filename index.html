@@ -451,6 +451,26 @@
         .amount {
             font-weight: 500;
         }
+        
+        .kickback-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            position: relative;
+        }
+        
+        .kickback-label {
+            flex: 1;
+        }
+        
+        .percentage {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: 600;
+            color: #4de2a9;
+        }
 
         /* Workspace Grid */
         .workspace-grid {
@@ -672,7 +692,7 @@
                 </div>
                 
                 <div class="highlight-banner">
-                    <p><strong>Turn rentals into rewards!</strong> Keep 100% of the rent, with €2,200 fueling your kickbacks.</p>
+                    <p><strong>Turn rentals into rewards!</strong> Get 50% of the rent, with €3,300 fueling your kickbacks.</p>
                 </div>
             </header>
 
@@ -695,8 +715,11 @@
                                 <span class="amount">€1,100</span>
                             </div>
                             <div class="calc-row highlight">
-                                <span>Your Kickback:</span>
-                                <span class="amount">€1,100</span>
+                                <div class="kickback-row">
+                                    <span class="kickback-label">Your Kickback:</span>
+                                    <span class="percentage">50%</span>
+                                    <span class="amount">€1,100</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -729,13 +752,12 @@
                         <h3>Flex Office</h3>
                     </div>
                     <ul class="feature-list">
-                        <li><i class="fas fa-door-closed"></i> Private office for 1-8 people</li>
+                        <li><i class="fas fa-door-closed"></i> Private office for 1-4 people</li>
                         <li><i class="fas fa-wifi"></i> High-speed internet</li>
                         <li><i class="fas fa-users"></i> Free meeting rooms</li>
                         <li><i class="fas fa-euro-sign"></i> Monthly kickback fee</li>
                         <li><i class="fas fa-coffee"></i> Complimentary coffee/tea</li>
                         <li><i class="fas fa-user-check"></i> I.Q. participant benefits</li>
-                        <li><i class="fas fa-tv"></i> Presentation screen</li>
                     </ul>
                     <div class="pricing">
                         <div class="original-price">Max price: €470</div>
@@ -770,7 +792,7 @@
             </div>
             
             <div class="contact-container">
-                <div class="contact-info">Contact: Ge Limmen • +31 6 22380123</div>
+                <div class="contact-info">Email: schieland@schieland18.nl • Website: www.schieland18.nl • Contact: Max Nijman 0634 261817</div>
             </div>
         </div>
     </main>
