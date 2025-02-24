@@ -10,7 +10,7 @@ window.translations = {
         tagline: "Improved Quality",
         banner: "<strong>Turn rentals into rewards!</strong> Get 50% of the rent, with €3,300 fueling your kickbacks.",
         concept: "Unique Concept in the Netherlands",
-        description: "Become a member and supporter of Flex Workspaces, and receive the kickback fee.",
+        description: "Become a member and supporter of Flexplekken IQ, and receive the kickback fee.",
         costPrice: "Cost price per month: <strong>€2,200</strong>",
         aboveThreshold: "Everything above this amount is distributed pro-rata among members.",
         revenue: "Revenue:",
@@ -22,6 +22,7 @@ window.translations = {
         freeRooms: "Free meeting rooms",
         kickbackFee: "Monthly kickback fee",
         coffee: "Complimentary coffee/tea",
+        freeParking: "Free Parking",
         benefits: "I.Q. participant benefits",
         maxPrice: "Max price: €230",
         yourPrice: "Your price: €115",
@@ -42,9 +43,9 @@ window.translations = {
     // Dutch translations
     nl: {
         tagline: "Improved Quality",
-        banner: "<strong>Zet huur om in korting!</strong> Ontvang 50% terug bij een omzet van Euro 3.300,00",
+        banner: "<strong>Zet huur om in korting!</strong> Ontvang 50% terug bij een omzet van €3,300",
         concept: "Uniek Concept in Nederland",
-        description: "Word lid van Flex Werkplekken, en ontvang de kickback vergoeding.",
+        description: "Word partner van Flexplekken IQ, en ontvang de kickback vergoeding.",
         costPrice: "Kostprijs per maand: <strong>€2.200</strong>",
         aboveThreshold: "Alles boven dit bedrag wordt pro-rata verdeeld onder de leden.",
         revenue: "Omzet:",
@@ -56,6 +57,7 @@ window.translations = {
         freeRooms: "Gratis vergaderruimtes",
         kickbackFee: "Maandelijkse kickback vergoeding",
         coffee: "Gratis koffie/thee",
+        freeParking: "Gratis Parkeren",
         benefits: "I.Q. deelnemersvoordelen",
         maxPrice: "Max prijs: €230",
         yourPrice: "Uw prijs: €115",
@@ -105,6 +107,7 @@ function updateLanguage(lang) {
     document.querySelectorAll('.feature-list')[0].querySelectorAll('li')[3].innerHTML = `<i class="fas fa-euro-sign"></i> ${t.kickbackFee}`;
     document.querySelectorAll('.feature-list')[0].querySelectorAll('li')[4].innerHTML = `<i class="fas fa-coffee"></i> ${t.coffee}`;
     document.querySelectorAll('.feature-list')[0].querySelectorAll('li')[5].innerHTML = `<i class="fas fa-user-check"></i> ${t.benefits}`;
+    document.querySelectorAll('.feature-list')[0].querySelectorAll('li')[6].innerHTML = `<i class="fas fa-car"></i> ${t.freeParking}`;
     document.querySelectorAll('.original-price')[0].innerHTML = t.maxPrice;
     document.querySelectorAll('.final-price')[0].innerHTML = t.yourPrice;
     
@@ -116,6 +119,7 @@ function updateLanguage(lang) {
     document.querySelectorAll('.feature-list')[1].querySelectorAll('li')[3].innerHTML = `<i class="fas fa-euro-sign"></i> ${t.kickbackFee}`;
     document.querySelectorAll('.feature-list')[1].querySelectorAll('li')[4].innerHTML = `<i class="fas fa-coffee"></i> ${t.coffee}`;
     document.querySelectorAll('.feature-list')[1].querySelectorAll('li')[5].innerHTML = `<i class="fas fa-user-check"></i> ${t.benefits}`;
+    document.querySelectorAll('.feature-list')[1].querySelectorAll('li')[6].innerHTML = `<i class="fas fa-car"></i> ${t.freeParking}`;
     document.querySelectorAll('.original-price')[1].innerHTML = t.officeMaxPrice;
     document.querySelectorAll('.final-price')[1].innerHTML = t.officeYourPrice;
     

@@ -464,13 +464,70 @@
             flex: 1;
         }
         
-        .percentage {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            font-weight: 600;
-            color: #4de2a9;
-        }
+/* Replace the current .percentage styling with this */
+/* Replace the current .percentage styling with this */
+.percentage {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 700;
+    color: #ffffff; /* Keep white text */
+    background: #00815d; /* Darker green background for better contrast */
+    padding: 0.3rem 2rem; /* Wide padding */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(77, 226, 169, 0.7);
+    font-size: 1.3rem;
+    z-index: 5;
+    animation: floating 3s ease-in-out infinite;
+    overflow: hidden; /* For the shine effect */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Add shadow to text for better readability */
+}
+
+/* Keep the floating animation */
+@keyframes floating {
+    0% {
+        transform: translateX(-50%) translateY(0px);
+    }
+    50% {
+        transform: translateX(-50%) translateY(-6px);
+    }
+    100% {
+        transform: translateX(-50%) translateY(0px);
+    }
+}
+
+/* Adjust the shine effect to be more visible */
+.percentage::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.8),
+        transparent
+    );
+    animation: shine 4s infinite;
+}
+
+@keyframes shine {
+    0% {
+        left: -100%;
+    }
+    20%, 100% {
+        left: 100%;
+    }
+}
+
+/* Adjust the container to make space */
+.calc-row.highlight {
+    padding-top: 1.2rem;
+    padding-bottom: 0.8rem;
+    position: relative;
+}
 
         /* Workspace Grid */
         .workspace-grid {
@@ -739,6 +796,7 @@
                         <li><i class="fas fa-euro-sign"></i> Monthly kickback fee</li>
                         <li><i class="fas fa-coffee"></i> Complimentary coffee/tea</li>
                         <li><i class="fas fa-user-check"></i> I.Q. participant benefits</li>
+                        <li><i class="fas fa-car"></i> Free Parking</li>
                     </ul>
                     <div class="pricing">
                         <div class="original-price">Max price: €230</div>
@@ -758,6 +816,7 @@
                         <li><i class="fas fa-euro-sign"></i> Monthly kickback fee</li>
                         <li><i class="fas fa-coffee"></i> Complimentary coffee/tea</li>
                         <li><i class="fas fa-user-check"></i> I.Q. participant benefits</li>
+                        <li><i class="fas fa-car"></i> Free Parking</li>
                     </ul>
                     <div class="pricing">
                         <div class="original-price">Max price: €470</div>
